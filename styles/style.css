@@ -389,6 +389,15 @@ aside img {
   transition: 1s;
   border-image: linear-gradient(rgba(56, 56, 56, 0) 20%, rgba(56, 56, 56), rgba(56, 56, 56, 0) 80%) 1;
   border-width: 0 0 0 1px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-text-wrapper > div {
+  min-width: 100%;
+  display: block;
+  transition: 0.3s ease-in-out;
 }
 
 .education-text-wrapper {
@@ -400,6 +409,13 @@ aside img {
   opacity: 1;
   transform: translateY(0);
 }
+
+.goBack {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
 
 
 
