@@ -326,7 +326,6 @@ aside img {
 
 
 
-
 /* section 3 work and education */
 .sect3 {
   max-width: 1200px;
@@ -347,10 +346,6 @@ aside img {
   justify-content: center;
   align-items: center;
   margin-top: var(--sect3-cont-margin-top);
-  /* background-image: url('../../pics/wild-west-landscape-silhouette-vector.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
 }
 
 .expletter,
@@ -368,7 +363,8 @@ aside img {
 
 }
 
-.sect3 ul li ul li {
+.sect3 ul li ul li,
+.item-work-responsibilities ul li {
   list-style-type: disc;
   list-style-position: inside;
   color: rgba(255, 255, 255, 0.7);
@@ -389,6 +385,15 @@ aside img {
   transition: 1s;
   border-image: linear-gradient(rgba(56, 56, 56, 0) 20%, rgba(56, 56, 56), rgba(56, 56, 56, 0) 80%) 1;
   border-width: 0 0 0 1px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+.work-text-wrapper > div {
+  min-width: 100%;
+  display: block;
 }
 
 .education-text-wrapper {
@@ -400,6 +405,26 @@ aside img {
   opacity: 1;
   transform: translateY(0);
 }
+
+.goBack {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+.list > li {
+  border-bottom: 0.5px solid transparent;
+  line-height: 2.5em;
+}
+
+.list > li:hover {
+  display: inline;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 0.5px solid white;
+}
+
 
 
 
