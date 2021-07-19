@@ -41,7 +41,7 @@ function createObserver(element) {
   let options = {
     root: null,
     rootMargin: "0px",
-    threshold: [0.1, 0.2, 0.3],
+    threshold: [0.2, 0.3],
   }
 
   function callback(g) {
