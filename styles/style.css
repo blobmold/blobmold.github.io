@@ -385,6 +385,7 @@ aside img {
   opacity: 0;
   transform: translateY(50px);
   transition: 1s;
+  border-style: solid;
   border-image: linear-gradient(rgba(56, 56, 56, 0) 20%, rgba(56, 56, 56), rgba(56, 56, 56, 0) 80%) 1;
   border-width: 0 0 0 1px;
   display: flex;
