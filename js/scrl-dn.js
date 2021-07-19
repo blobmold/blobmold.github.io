@@ -77,26 +77,24 @@ function createObserver(element) {
 let expEdu = (box, letter) => {
   anime({
     targets: box,
-    translateY: { value: 0, duration: 1000, delay: 500 },
-    // translateX: { value: "-100%", duration: 1000, delay: 3000 },
-    rotate: { value: 180, delay: 900, duration: 1100 },
+    translateY: { value: 0, duration: 500, delay: 500 },
+    rotate: { value: 180, delay: 900, duration: 1000 },
     width: [
-      { value: '90%', delay: 1500, duration: 1000 },
+      { value: '90%', delay: 1100, duration: 600 },
     ],
     height: [
-      { value: 100, delay: 2000, duration: 1000 },
+      { value: 100, delay: 1100, duration: 1000 },
     ],
-    borderRadius: { value: 10, delay: 2000 },
-    opacity: { value: 0, delay: 3050, duration: 500, easing: "easeInSine" }
+    borderRadius: { value: 10, delay: 1100 },
+    scale: { value: 0, delay: 2100, duration: 200, easing: "easeInSine" }
   })
 
   anime({
     targets: letter,
-    opacity: { value: 1, delay: 3600, duration: 100 },
+    opacity: { value: 1, delay: 2100, duration: 100 },
     scale: [
-      { value: 0.5, delay: 3200, },
+      { value: 0.5, delay: 2100, },
       { value: 1, delay: anime.stagger(20) }
     ],
-    easing: 'easeInBack'
   })
 }
