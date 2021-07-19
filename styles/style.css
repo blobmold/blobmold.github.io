@@ -417,7 +417,6 @@ aside img {
 }
 
 .list > li {
-  display: block;
   list-style-type: square;
   border-bottom: 0.5px solid transparent;
   line-height: 2.5em;
