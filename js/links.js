@@ -11,10 +11,14 @@ let links = {
     url: 'mailto:g.paresishvili@outlook.com', 
     img: '/pics/links/Mail.svg'
   },
-  "Discrod": {
-    url: 'https://www.apple.com', 
-    img: '/pics/links/Discord.svg'
-  },
+//   "Discrod": {
+//     url: 'https://www.apple.com', 
+//     img: '/pics/links/Discord.svg'
+//   },
+  "GitHub": {
+    url: "https://github.com/macron125",
+    img: 'pics/links/github.png'
+  }
 }
 
 //Generate a DOM element with a given type, class name and a parent to append to
