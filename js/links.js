@@ -11,45 +11,33 @@ let links = {
     url: 'mailto:g.paresishvili@outlook.com', 
     img: '/pics/links/Mail.svg'
   },
-//   "Discrod": {
-//     url: 'https://www.apple.com', 
-//     img: '/pics/links/Discord.svg'
-//   },
   "GitHub": {
-    url: "https://github.com/macron125",
-    img: 'pics/links/github.png'
-  }
+    url: 'https://github.com/macron125', 
+    img: '/pics/links/github.svg'
+  },
 }
 
-//Generate a DOM element with a given type, class name and a parent to append to
-function createElement (type, className, parent) {
-  let nE = document.createElement(type)
-  nE.classList.add(className);
-  parent.appendChild(nE);
+let aside = document.querySelector('aside');
+
+function createElement (tag, cName, parent) {
+  let nE = document.createElement(tag);
+  if(cName != undefined) {
+    nE.classList.add(cName);
+  };
+  parent.appendChild(nE)
+  return nE;
 }
 
-//create a DIV DOM element
-function addItems(obj, section) {
-  for (let name in obj) {
-    createElement("div", name, section);    //add parent div
-    let div = document.querySelector("." + name);
-    createElement('a', undefined, div);     //add anchor tag and set a reference
-    let a = document.querySelector("." + name + " a");
+function addIcons(parent, obj) {
+  let p = parent("div", "parent", aside)
+  for(let name in obj) {
+    let p1 = createElement('div', name, p);
+    let a = createElement('a', "a-" + name, p1);
     a.setAttribute("href", obj[name].url);
-    a.setAttribute('target', '_blank')
-    createElement("img", "img-" + name, a);    //add img element
-    let img = document.querySelector(".img-" + name);
-    img.setAttribute("src", obj[name].img);
-
+    a.setAttribute('target', '_blank');
+    let img = createElement('img', "img-" + name, a);
+    img.setAttribute("src", obj[name].img)
   }
 }
 
-let aside = document.querySelector("aside");
-let smc = document.querySelector(".social-media-container");
-
-let sections = [smc, aside]
-
-for(let section of sections) {
-  console.log(section)
-  addItems(links, section)
-}
+addIcons(createElement, links)
