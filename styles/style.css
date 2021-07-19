@@ -61,6 +61,7 @@
   --sect2-about-padding: 20px 200px;
   --sect7-margin-top: auto;
   --sect3-exp_edu-letters-size: 40px;
+    --sect3-text-wrapper-alignment: center;
 }
 
 @media screen and (max-width: 980px) {
@@ -73,6 +74,7 @@
     --sect2-grid-areas: "profile" "logo" "details" "about";
     --sect2-details-text-align: center;
     --sect2-about-padding: 20px;
+    --sect3-text-wrapper-alignment: top;
   }
   #education h2 {
     order: 1;
@@ -388,7 +390,7 @@ aside img {
   display: flex;
   position: relative;
   overflow: hidden;
-  align-items: center;
+  align-items: var(--sect3-text-wrapper-alignment);
 }
 
 .work-text-wrapper > div {
@@ -413,17 +415,20 @@ aside img {
   padding: 20px;
   cursor: pointer;
 }
+
 .list > li {
+  display: block;
+  list-style-type: square;
   border-bottom: 0.5px solid transparent;
   line-height: 2.5em;
 }
 
 .list > li:hover {
-  display: inline;
   cursor: pointer;
   transition: 0.2s;
-  border-bottom: 0.5px solid white;
+  color: #99a2ee;
 }
+
 
 
 
