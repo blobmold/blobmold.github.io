@@ -41,7 +41,6 @@ function animate(target, turn) {
     translateX: {
       value: `-${turn + 1 + "00%"}`,
       duration: 1200,
-      easing: "easeOutExpo",
     },
   });
 }
