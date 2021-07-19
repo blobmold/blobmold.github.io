@@ -1,11 +1,11 @@
 let links = {
   "LinkedIn": {
     url: 'https://www.linkedin.com/in/ifyoureadthisyouareawesome/', 
-    img: '/pics/links/Linkedin.svg'
+    img: '/pics/links/linkedin.png'
   },
   "Twitter": {
     url: 'https://twitter.com/GParesishvili', 
-    img: '/pics/links/Twitter.svg'
+    img: '/pics/links/twitter.png'
   },
   "Email": {
     url: 'mailto:g.paresishvili@outlook.com', 
@@ -13,11 +13,11 @@ let links = {
   },
   "GitHub": {
     url: 'https://github.com/macron125', 
-    img: '/pics/links/github.svg'
+    img: '/pics/links/github.png'
   },
 }
 
-let aside = document.querySelector('aside');
+let aside = document.querySelector('aside')
 
 function createElement (tag, cName, parent) {
   let nE = document.createElement(tag);
@@ -29,9 +29,8 @@ function createElement (tag, cName, parent) {
 }
 
 function addIcons(parent, obj) {
-  let p = parent("div", "parent", aside)
   for(let name in obj) {
-    let p1 = createElement('div', name, p);
+    let p1 = createElement('div', name, parent);
     let a = createElement('a', "a-" + name, p1);
     a.setAttribute("href", obj[name].url);
     a.setAttribute('target', '_blank');
@@ -40,4 +39,4 @@ function addIcons(parent, obj) {
   }
 }
 
-addIcons(createElement, links)
+let sect1Icons = addIcons(aside, links)
