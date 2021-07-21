@@ -77,6 +77,7 @@ function createObserver(element) {
 let expEdu = (box, letter) => {
   anime({
     targets: box,
+    opacity: {value: 1, duration: 1000, easing: "linear"},
     translateY: { value: 0, duration: 500, delay: 500 },
     rotate: { value: 180, delay: 900, duration: 1000 },
     width: [
