@@ -18,6 +18,7 @@ function goBack(parent) {
     anime({
       targets: child,
       translateX: "0%",
+      duration: 500,
       easing: "easeOutElastic",
     });
   }
@@ -40,7 +41,8 @@ function animate(target, turn) {
     targets: target,
     translateX: {
       value: `-${turn + 1 + "00%"}`,
-      duration: 1200,
+      duration: 500,
+      easing: "easeOutElastic"
     },
   });
 }
