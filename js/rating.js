@@ -13,6 +13,7 @@ let skills = {
   },
   tools: {
     "VS Code": 4,
+    "Google Analytics": 4,
     "Affinity Designer": 4,
     "Affinity Photo": 4,
     "MS Excel": 5,
