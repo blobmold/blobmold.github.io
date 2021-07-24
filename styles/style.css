@@ -101,6 +101,12 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  :root {
+    --sect4-text-font-size: 0.7rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -480,6 +486,7 @@ aside img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
+  font-size: var(--sect4-text-font-size)
 }
 
 .sect4-listOfSkills li span:first-child {
