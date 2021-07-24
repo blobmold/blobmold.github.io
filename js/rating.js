@@ -9,7 +9,8 @@ let skills = {
     "SASS / SCSS": 4,
     "jQuery": 3,
     "React.js": 2,
-    "Vue.js": 1
+    "Vue.js": 1,
+    "Angular": 1,
   },
   tools: {
     "VS Code": 4,
