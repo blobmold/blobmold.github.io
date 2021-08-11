@@ -1,5 +1,5 @@
 let skills = {
-  programming: {
+  skills: {
     "HTML": 5,
     "CSS": 5,
     "JavaScript": 4,
