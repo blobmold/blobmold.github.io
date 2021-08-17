@@ -7,10 +7,12 @@ let skills = {
     "PHP": 3,
     "XML": 4,
     "SASS / SCSS": 4,
+    "Bootstrap": 2,
     "jQuery": 3,
     "React.js": 2,
     "Vue.js": 1,
     "Angular": 1,
+    "WordPress": 2,
   },
   tools: {
     "VS Code": 4,
