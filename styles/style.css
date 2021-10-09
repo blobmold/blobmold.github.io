@@ -1,3 +1,21 @@
+/* 
+Table of Contents
+
+1.0.0 Fonts
+2.0.0 Root
+3.0.0 Reusables
+4.0.0 Header
+5.0.0 Main
+  5.1.0 Section 1
+  5.2.0 Section 2
+  5.3.0 Section 3
+  5.4.0 Section 4
+6.0.0 Footer 
+*/
+
+
+
+/* 1.0.0 Fonts */
 @font-face {
   font-family: montserrat-thin;
   src: 
@@ -51,6 +69,7 @@
     font-display: swap;
 }
 
+/* 2.0.0 Root */
 
 :root {
   --columns: 2;
@@ -156,7 +175,7 @@ section {
 
 
 
-/* Section 1 */
+/* 5.1.0 Section 1 */
 
 .sect1-name {
   position: relative;
@@ -260,7 +279,8 @@ aside img {
 
 
 
-/* Section 2 */
+/* 5.2.0 Section 2 */
+
 .sect2 {
   max-width: 1200px;
   margin: 0 auto;
@@ -340,7 +360,9 @@ aside img {
 
 
 
-/* section 3 work and education */
+/* 5.3.0 Section 3 */
+/* Word and Education */
+
 .sect3 {
   max-width: 1200px;
   margin-left: auto;
@@ -455,7 +477,9 @@ aside img {
 
 
 
-/* Section 4 */
+/* 5.4.0 Section 4 */
+/*  */
+
 .sect4 {
   list-style-type: none;
 }
@@ -541,7 +565,8 @@ aside img {
 
 
 
-/*Footer*/
+/* 6.0.0 Footer */
+
 footer {
   margin-top: 200px;
   min-height: 50vh;
