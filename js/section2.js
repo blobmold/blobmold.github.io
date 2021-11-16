@@ -21,7 +21,7 @@ personalDetails.setAge(1995, 8, 10)
 
 let sect2Details = document.querySelector(".sect2-details");
 for(let entry of Object.entries(personalDetails)) {
-  console.log(entry[0].split("")[0].toUpperCase() + entry[0].slice(1))
+//   console.log(entry[0].split("")[0].toUpperCase() + entry[0].slice(1))
   let newSect2H3El = document.createElement("h3");
   let newSect2PEl = document.createElement("p")
   newSect2H3El.innerText = entry[0].split("")[0].toUpperCase() + entry[0].slice(1);
