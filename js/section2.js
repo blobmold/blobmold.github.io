@@ -18,7 +18,6 @@ class PersonalDetails {   //section 2
 
 let personalDetails = new PersonalDetails("George Paresishvili", "Tbilisi, Georgia")
 personalDetails.setAge(1995, 8, 10)
-console.log(personalDetails)
 
 let sect2Details = document.querySelector(".sect2-details");
 for(let entry of Object.entries(personalDetails)) {
