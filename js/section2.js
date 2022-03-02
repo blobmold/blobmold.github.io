@@ -1,4 +1,4 @@
-class PersonalDetails {   //section 2
+class PersonalDetails { 
   constructor(name, location) {
     this.name = name;
     this.age = 0;

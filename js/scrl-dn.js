@@ -35,7 +35,6 @@ for (let el of arr) {
   createObserver(el)
 }
 
-//--
 function createObserver(element) {
 
   let options = {

@@ -3,16 +3,13 @@ let skills = {
     "HTML": 5,
     "CSS": 5,
     "JavaScript": 4,
+    "Node.js": 4,
     "PHP": 4,
     "XML": 4,
     "SASS / SCSS": 4,
     "WordPress": 4,
     "Bootstrap": 2,
     "jQuery": 3,
-    "React.js": 2,
-    "Vue.js": 1,
-    "Angular": 1,
-    "node.js": 1,
 
   },
   tools: {
